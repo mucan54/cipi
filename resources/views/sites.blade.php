@@ -154,8 +154,8 @@
     //Get DT Data
     getData('/api/sites');
 
-    //Datatable
-    function dtRender() {
+    // Render Make
+    function renderMake() {
         $('#dt').DataTable( {
             'processing': true,
             'data': JSON.parse(localStorage.getItem('dtdata')),
@@ -223,11 +223,9 @@
                 complete: function(data) {
                     setTimeout(function() {
                         $('#dt').DataTable().clear().destroy();
-                    }, 4500);
+                    }, 1500);
                     setTimeout(function() {
                         getData('/api/sites',false);
-                    }, 6000);
-                    setTimeout(function() {
                         $('#deleteSiteModal').modal('toggle');
                         $('#deletesitedomain').html('');
                         $('#deletesiteid').val('');
