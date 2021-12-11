@@ -9,12 +9,6 @@ use Tests\TestCase;
 
 class CipiTest extends TestCase
 {
-  
-    public function testRedirectToDashboard()
-    {
-        $response = $this->get('/');
-        $response->assertRedirect('/dashboard');
-    }
 
     public function testShowLoginPage()
     {
@@ -22,16 +16,5 @@ class CipiTest extends TestCase
         $response->assertSee('Cipi Control Panel');
         $response->assertStatus(200);
     }
-  
-    /*
-    public function testDefaultLogin()
-    {
-        $this->visit('/login')
-             ->type('administrator', 'username')
-             ->type('12345678', 'password')
-             ->press('OK')
-             ->seePageIs('/dashboard');
-    }
-    */
 
 }
