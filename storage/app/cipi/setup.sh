@@ -3,7 +3,7 @@
 
 
 #################################################### CONFIGURATION ###
-BUILD=202112101
+BUILD=202112181
 PASS=???
 DBPASS=???
 SERVERID=???
@@ -550,6 +550,8 @@ echo "Last steps..."
 echo "${reset}"
 sleep 1s
 
+sudo chown www-data:cipi -R /var/www/html
+sudo chmod -R 750 /var/www/html
 sudo echo 'StartLimitBurst=0' >> /usr/lib/systemd/system/user@.service
 sudo systemctl daemon-reload
 
