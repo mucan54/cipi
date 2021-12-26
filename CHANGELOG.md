@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 (no unreleased versions)
+## [3.1.15] - 2021-12-26
+
+### Fixed
+- Cron and Installation Permission Fix
+- Laravel and Vendor Update
+
 ## [3.1.14] - 2021-12-18
 
 ### Added
