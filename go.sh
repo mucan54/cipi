@@ -444,7 +444,7 @@ echo "${reset}"
 sleep 1s
 
 sudo apt-get -y install git
-sudo ssh-keygen -t rsa -C "git@github.com" -f /etc/cipi/github -q -P ""
+yes y | sudo ssh-keygen -t rsa -C "git@github.com" -f /etc/cipi/github -q -P ""
 
 
 
